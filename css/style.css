@@ -1,0 +1,294 @@
+:root{
+    --color-primario: rgb(132, 165, 157);
+    --color-secundario: rgb(242, 132, 130);
+    --color-terciario: rgb(246, 189, 96);
+    --color-cuaternario: rgb(247, 237, 226);
+    --fuente-primaria: 'Lora', serif;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: auto;
+    font-family: 'Asistente', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: var(--color-primario);
+}
+
+img {
+    width: 100%;
+    height: auto; 
+    margin: auto;
+    display: inline;
+   
+}
+/*menu de navegación*/
+
+header {
+    background-color: var(--color-terciario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+}
+
+header .logo {
+    width: 200px;
+    margin: auto;
+    padding-top: 10px;
+
+}
+
+header .menu ul li{
+  display: inline;
+  margin-right: 100px;
+
+}
+
+header .menu ul li :hover{
+   border-bottom: 3px solid black;
+    
+  }
+
+header .menu ul li a {
+    color:  black;
+    font-size: 20px
+}
+
+
+
+header .hiper a {
+    color: white;
+    background-color: rgb(255, 159, 28);
+    font-size: 20px;
+    border-radius: 43px;
+    padding: 13px; 
+}
+
+
+
+.hiper :hover {
+    background-color: black;
+}
+
+
+/*cuerpo del sitio*/
+
+ .container {
+    flex-wrap: wrap;
+}
+
+.nosotros {
+    margin: auto;
+    padding-left: 6px;
+    justify-content: center;
+}
+
+.nosotros h1{
+    color:  var(--color-primario);
+    font-size: 30px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.nosotros p{
+    font-family: var(--fuente-primaria);
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contenido1{
+    display: flex;
+    background-color: var(--color-secundario);
+    padding: 100px;
+}
+
+.logotipo {
+    width: 1000px;
+    padding-left: 40px;
+}
+
+b{
+    font-size: 50px;
+}
+
+.usos{
+    padding: 50px 0px 0px 80px;
+    justify-content: center;
+}
+
+.contenido2 {
+    padding: 100px;
+    background-color: var(--color-cuaternario);
+    padding-left: 20px;
+}
+
+.contenido2 p {
+    font-family: var(--fuente-primaria);
+    color: white;
+    padding-bottom: 10px;
+    font-size: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
+.contenido2 h1{
+    color:  rgb(255, 170, 0);
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.usos p{
+    color: rgb(0, 0, 0);
+}
+
+.Texto{
+    padding-top: 30px;
+    line-height: 25px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    padding: 85px;
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: end;
+}
+
+footer .redes ul li {
+    display: inline;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--color-terciario);
+    font-size: 20px;
+}
+
+h2 {
+    padding-bottom: 30px;
+    font-size: 20px;
+    color: rgb(255, 159, 28);
+    text-align: center;
+}
+
+
+.item :hover {
+    border-bottom: 2px solid black;
+}
+
+a {
+    color: black;
+}
+
+
+                                 /*MEDIA QUERY*/
+/*MEDIA QUERY se refiere a la adaptaciòn del sitio a las distintas resoluciones*/
+
+ /* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+ @media (min-width: 768px) and (max-width: 1024px)  {
+   
+  
+   header .menu ul li{
+    display: inline;
+    margin-right: 100px;
+    padding-left: 30px;
+    justify-content: space-around;
+  }
+
+
+
+   
+    /*Aquí van las propiedades y valores según el dispositivo*/
+
+}
+
+/* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    
+  
+    header{
+        flex-direction: column;
+    }
+  
+    .contenido1 {
+        flex-wrap: wrap;
+    }
+
+     nav {
+         padding: 20px;
+         justify-content: center;
+     }
+    
+
+     .logotipo {
+        width: 200px;
+        padding-left: 40px;
+        align-items: center;
+    }
+    
+    .logos {
+        flex-wrap: wrap;
+    }
+    
+
+
+
+   /*Aquí van las propiedades y valores según el dispositivo*/
+
+}
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .container{
+        display: flex;
+        width: 99%;
+    }
+
+  .contenido1 {
+      flex-wrap: wrap;
+  }
+  
+  header{
+      flex-direction: column;
+  }
+
+   nav {
+   padding: 20px;
+   }
+
+   nav ul li{
+    border: solid;
+    display: inline;
+    justify-content: center;
+   }
+
+   
+    header .menu ul li{
+    display: inline;
+    flex-direction: row;
+    margin: 100px;
+}
+   
+
+   /*Aquí van las propiedades y valores según el dispositivo*/
+
+}
+
